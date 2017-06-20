@@ -172,9 +172,9 @@ public class VideoChatViewActivity extends AppCompatActivity {
     }
 
     // Tutorial Step 8
-    public void onSwitchCameraClicked(View view) {
-        mRtcEngine.switchCamera();
-    }
+    //public void onSwitchCameraClicked(View view) {
+    //    mRtcEngine.switchCamera();
+    //}
 
     // Tutorial Step 6
     public void onEncCallClicked(View view) {
@@ -192,7 +192,7 @@ public class VideoChatViewActivity extends AppCompatActivity {
         mRtcEngine.setVideoProfile(Constants.VIDEO_PROFILE_360P, false);
     }
 
-    // Tutorial Step 3
+    // Try to add video
     private void setupLocalVideo() {
         FrameLayout container = (FrameLayout) findViewById(R.id.local_video_view_container);
         SurfaceView surfaceView = RtcEngine.CreateRendererView(getBaseContext());

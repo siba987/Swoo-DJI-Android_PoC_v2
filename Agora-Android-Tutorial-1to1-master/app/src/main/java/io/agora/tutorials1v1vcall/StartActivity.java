@@ -137,21 +137,12 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
             Log.v(TAG, "refreshSDK: False");
             mBtnOpen.setEnabled(false);
             mBtnTX.setEnabled(false);
+            mBtnTX.setEnabled(false);
 
             mTextProduct.setText(R.string.product_information);
             mTextConnectionStatus.setText(R.string.connection_loose);
         }
     }
-
-  //  public void forwardToLiveRoom(int cRole) {
-
-//        String room = "test";
-
- //       Intent i = new Intent(StartActivity.this, VideoChatViewActivity.class);
- //       i.putExtra(ConstantApp.ACTION_KEY_CROLE, cRole);
- //       i.putExtra(ConstantApp.ACTION_KEY_ROOM_NAME, room);
- //       startActivity(i);
-//    }
 
     @Override
     public void onClick(View v) {
@@ -164,7 +155,7 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
             }
             case R.id.btn_transmit:{
                 Intent intent = new Intent(this, VideoChatViewActivity.class); //create new activity TXActivity
-                //            Start_page.this.forwardToLiveRoom(Constants.CLIENT_ROLE_AUDIENCE);
+                //  StartActivity.this.forwardToLiveRoom(Constants.CLIENT_ROLE_AUDIENCE);
                 startActivity(intent);
                 break;
             }
